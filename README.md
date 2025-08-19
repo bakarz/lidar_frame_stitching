@@ -118,7 +118,6 @@ Set parameters via a ROS 2 parameter file or command-line arguments.
 
 ## Notes
 
-- CSV files are assumed to be sorted temporally (via `glob.glob` with sorting).
 - The Doppler ICP algorithm enhances alignment in dynamic scenes using velocity data.
 - The stitched cloud is downsampled if it exceeds 100,000 points to manage memory.
 - Detailed logs provide insights into point counts, filtering, and ICP performance.
