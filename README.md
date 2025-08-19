@@ -20,7 +20,7 @@ The `DopplerICPStitcher` is a ROS 2 node that processes point cloud data from CS
 ## Dependencies
 
 ### System Requirements
-- **ROS 2** (Humble or later recommended)
+- **ROS 2** (Humble)
 - **Python 3.1+**
 
 ### Python Packages
