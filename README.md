@@ -58,7 +58,7 @@ The node supports the following configurable parameters:
 
 | Parameter                | Type   | Default Value                                    | Description                                                                 |
 |--------------------------|--------|--------------------------------------------------|-----------------------------------------------------------------------------|
-| `frames_directory`       | string | `/home/farness/Downloads/.../csv_point_clouds`   | Directory containing point cloud files                                  |
+| `frames_directory`       | string | `/home/farness/.../csv_point_clouds`   | Directory containing point cloud files                                  |
 | `velocity_threshold`      | float  | `20`                                             | Max absolute radial velocity for filtering (m/s)                            |
 | `downsample_factor`       | int    | `10`                                             | Factor for uniform point cloud downsampling                                |
 | `max_iterations`         | int    | `50`                                              | Max iterations for ICP algorithm                                           |
@@ -66,7 +66,7 @@ The node supports the following configurable parameters:
 | `publish_rate`           | int    | `10`                                             | Publishing rate (Hz)                                                       |
 | `lambda_doppler`         | float  | `0.01`                                           | Weight for Doppler term in ICP cost function                               |
 | `frame_dt`               | float  | `0.1`                                            | Time difference between frames (seconds)                                   |
-| `t_vl_x`, `t_vl_y`, `t_vl_z` | float | `1.42`, `0.24`, `1.37`                         | Translation vector components for Doppler calculations                     |
+| `t_vl_x`, `t_vl_y`, `t_vl_z` | float | `0`, `0`, `0`                         | Translation vector components for Doppler calculations                     |
 | `reject_outliers`        | bool   | `True`                                           | Enable outlier rejection based on Doppler residuals                        |
 | `outlier_thresh`         | float  | `2.0`                                            | Threshold for outlier rejection (m/s)                                      |
 | `rejection_min_iters`    | int    | `2`                                              | Min iterations before outlier rejection                                    |
